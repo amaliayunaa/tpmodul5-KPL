@@ -1,2 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace tpmodul5_1302204100;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        SayaTubeVideo a = new SayaTubeVideo("Tutorial Design By Contract – Amalia Yuna ");
+        a.PrintVideoDetails();
+
+        Console.WriteLine("\n");
+
+        SayaTubeVideo b = new SayaTubeVideo("Google LLC adalah sebuah perusahaan multinasional Amerika Serikat yang berkekhususan pada jasa dan produk Internet. Produk-produk tersebut meliputi teknologi pencarian, komputasi web, perangkat lunak, dan periklanan daring");
+        b.PrintVideoDetails();
+
+        Console.WriteLine("\n");
+
+        a.IncreasePlayCount(24);
+        a.PrintVideoDetails();
+        a.IncreasePlayCount(11000000);
+        a.PrintVideoDetails();
+
+    }
+}
